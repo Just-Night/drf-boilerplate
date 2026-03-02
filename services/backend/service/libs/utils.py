@@ -1,9 +1,9 @@
 import os
-from datetime import datetime
-import string
 import random
-
+import secrets
+import string
 import xml.etree.cElementTree as et
+from datetime import datetime
 
 
 def get_n_items_from_iterable(dataset: list, amount: int) -> list:
@@ -21,6 +21,11 @@ def generate_random_string(length) -> str:
     return "".join(
         [random.choice(string.ascii_uppercase + string.ascii_uppercase + string.digits) for _ in range(length)]
     )
+
+
+def generate_random_alnum_string(length=32):
+    alphabet = string.ascii_letters + string.digits
+    return ''.join(secrets.choice(alphabet) for letter in range(length))
 
 
 def is_svg(file):

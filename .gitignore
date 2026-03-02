@@ -1,6 +1,6 @@
 # env
-# *.env
-# *env
+*.env
+*env
 
 # django
 *.log
@@ -18,4 +18,6 @@ db.sqlite3
 *.DS_Store
 
 # sandbox
+_sandbox
 sandbox/
+_sandbox/

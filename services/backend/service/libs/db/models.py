@@ -45,7 +45,21 @@ class BaseModel(models.Model):
 
 
 class BaseInternalIdModel(BaseModel):
-    internal_id = models.CharField(max_length=10, unique=True, default=generate_random_string_10)
+    internal_id = models.CharField(max_length=30, unique=True, default=generate_random_string_10)
+
+    class Meta:
+        abstract = True
+
+
+class BaseDiscordEntityModel(BaseModel):
+    discord_id = models.CharField(max_length=25, db_index=True, **NB)
+
+    class Meta:
+        abstract = True
+
+
+class BaseTelegramEntityModel(BaseModel):
+    telegram_id = models.CharField(max_length=25, db_index=True, **NB)
 
     class Meta:
         abstract = True

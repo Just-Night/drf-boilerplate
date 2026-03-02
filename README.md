@@ -3,6 +3,7 @@
 > Repository uses Mono-app approach
 
 ## Included:
+
 - Docker configuration
   - `Dockerfile`
   - `docker-compose.yml`
@@ -25,7 +26,6 @@
   - django debug toolbar
   - CORS
   - ipython shell
-
 
 ## Usage
 

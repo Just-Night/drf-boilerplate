@@ -1,25 +1,34 @@
-Django==4.2.8
-django-cors-headers==4.3.1
-djangorestframework==3.14.0
-psycopg2-binary==2.9.9
-gunicorn==21.2.0
-Pillow==10.1.0
-boto3==1.34.7
-django-storages==1.14.2
-django-filter==23.5
-celery==5.3.6
-redis==5.0.1
-django-celery-beat==2.5.0
+Django==5.1.7
+django-cors-headers==4.6.0
+djangorestframework==3.15.2
+djangorestframework-api-key==3.0.0
+psycopg2-binary==2.9.10
+gunicorn==23.0.0
+Pillow==10.4.0
+boto3==1.35.47
+django-storages==1.14.3
+django-filter==24.3
+celery==5.4.0
+redis==5.2.0
+django-celery-beat==2.8.1
 flower==2.0.1
-django-celery-results==2.5.1
+django-celery-results==2.6.0
 django-nested-admin==4.0.2
-Faker==21.0.0
-django-debug-toolbar==4.2.0
-ipython==8.19.0
+Faker==27.0.0
+django-debug-toolbar==4.4.6
+ipython==8.25.0
+social-auth-app-django==5.4.2
+requests==2.32.3
+discord.py==2.6.4
+
+# Dashboard
+django-unfold==0.72.0
 
 # Docs
-drf-yasg==1.21.7
+drf-yasg==1.21.11
 
 # Sentry
-sentry-sdk==1.39.1
-sentry-sdk [django] == 1.39.1
+sentry-sdk==2.19.0
+
+# Code quality
+isort==5.13.2
