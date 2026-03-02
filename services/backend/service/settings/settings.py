@@ -63,11 +63,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Project apps
-    # Core apps
-    'apps.core',
-    # Integrations
-    'apps.integrations',
-    # Service apps
     'apps',
     # If needed create more than single app:
     # 'apps.examples',
